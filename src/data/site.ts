@@ -1,0 +1,57 @@
+export const siteConfig = {
+  name: '彩蛋影像有限公司',
+  nameEn: 'Egg Image Studio Inc.',
+  shortName: '彩蛋影像',
+  url: 'https://eggstudio.online',
+  description: '彩蛋影像有限公司，專注於XR（VR/AR）內容創作與互動沈浸式展演，我們結合最新科技與創意，為客戶提供一站式規劃與製作服務，探索未來科技藝術的無限可能。',
+  founder: '高憲郎 (Kurt Kao)',
+  established: 2018,
+  email: 'gun0820@gmail.com',
+  address: '台北市文山區溪洲街10號',
+  taxId: '82868556',
+  facebook: 'https://www.facebook.com/people/彩蛋影像有限公司EggImageInc/100057205969497/',
+  instagram: 'https://www.instagram.com/eggstudio.tw/',
+  threads: 'https://www.threads.com/@eggstudio.tw',
+  logo: {
+    header: 'https://static.wixstatic.com/media/5526fe_b092b3a4d81d4cfe866813a629482fdd~mv2.png/v1/fill/w_362,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%E5%BD%A9%E8%9B%8B%E5%BD%B1%E5%83%8F-1%20(18).png',
+    footer: 'https://static.wixstatic.com/media/5526fe_205f65ef817f4c9a93ab922516e49887~mv2.png/v1/fill/w_63,h_33,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%E5%BD%A9%E8%9B%8B%E5%BD%B1%E5%83%8F-1%20(24)_edited.png',
+  },
+  services: [
+    {
+      name: 'Creative Content 內容開發',
+      description: '以創意內容結合新科技，探索世界未竟之地。',
+      href: '/content',
+      icon: 'https://static.wixstatic.com/media/5526fe_c5ab0eb3dabf4d8f9bcd06e14da8ea1e~mv2.png/v1/fill/w_99,h_99,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5526fe_c5ab0eb3dabf4d8f9bcd06e14da8ea1e~mv2.png',
+    },
+    {
+      name: 'VR S3D 立體視覺虛擬實境',
+      description: '高沈浸感立體視覺3D虛擬實境影像。',
+      href: '/s3d',
+      icon: 'https://static.wixstatic.com/media/5526fe_570023f5ce7c4d96abeda996b70b79f3~mv2.png/v1/fill/w_99,h_99,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5526fe_570023f5ce7c4d96abeda996b70b79f3~mv2.png',
+    },
+    {
+      name: 'Interactive Exhibition 互動式展演',
+      description: '透過科技與觀眾互動，讓參與者影響展覽或表演內容，提升沉浸式體驗。',
+      href: '/interactive',
+      icon: 'https://static.wixstatic.com/media/5526fe_f2bb60efd60e4bbf8f56381d87d8bbb7~mv2.png/v1/fill/w_99,h_99,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5526fe_f2bb60efd60e4bbf8f56381d87d8bbb7~mv2.png',
+    },
+    {
+      name: 'VR LBE 大型互動虛擬實境',
+      description: '為 VR 街機、遊戲空間或其他大型訓練區域創建地圖，同時為多位玩家提供高自由靈活度的 VR 體驗。',
+      href: '/lbe',
+      icon: 'https://static.wixstatic.com/media/5526fe_73e40e3471754184bcf7606e8c4fdfd9~mv2.png/v1/fill/w_99,h_99,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5526fe_73e40e3471754184bcf7606e8c4fdfd9~mv2.png',
+    },
+    {
+      name: 'Projection Mapping 光雕投影',
+      description: '以投影技術在建築或物體上創造立體影像，實現動態視覺效果。',
+      href: '/mapping',
+      icon: 'https://static.wixstatic.com/media/5526fe_38e830ad6fe24d0bba5a51911eb0184c~mv2.png/v1/fill/w_99,h_99,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5526fe_38e830ad6fe24d0bba5a51911eb0184c~mv2.png',
+    },
+    {
+      name: 'AR 擴增實境',
+      description: '虛擬內容結合現實場景，提供即時資訊疊加的互動式體驗。',
+      href: '/ar',
+      icon: 'https://static.wixstatic.com/media/5526fe_bba83430c1fd4c7b854d38de7d190028~mv2.png/v1/fill/w_99,h_99,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5526fe_bba83430c1fd4c7b854d38de7d190028~mv2.png',
+    },
+  ],
+} as const;
