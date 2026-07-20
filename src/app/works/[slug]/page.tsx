@@ -87,9 +87,44 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               <p className="mt-6 text-zinc-400 leading-relaxed text-lg">
                 {project.description}
               </p>
-              <p className="mt-4 text-zinc-400 leading-relaxed">
-                此為作品詳細介紹的預留空間。完整的作品描述、製作過程、技術細節與幕後花絮將在後續更新中補充。
-              </p>
+
+              {project.overview && project.overview.length > 0 && (
+                <div className="mt-6 space-y-4">
+                  {project.overview.map((paragraph, i) => (
+                    <p key={i} className="text-zinc-400 leading-relaxed">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              )}
+
+              {project.highlights && project.highlights.length > 0 && (
+                <section className="mt-12">
+                  <h2 className="text-lg font-bold text-white">技術與製作重點</h2>
+                  <ul className="mt-4 space-y-3">
+                    {project.highlights.map((item) => (
+                      <li key={item} className="flex gap-3 text-zinc-400 leading-relaxed">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
+              {project.awards && project.awards.length > 0 && (
+                <section className="mt-12">
+                  <h2 className="text-lg font-bold text-white">展演與獲獎紀錄</h2>
+                  <ul className="mt-4 space-y-3">
+                    {project.awards.map((item) => (
+                      <li key={item} className="flex gap-3 text-zinc-400 leading-relaxed">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-white/30" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
             </div>
 
             {/* 側邊資訊 */}
@@ -109,6 +144,36 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                     <dt className="text-xs text-zinc-500">年份</dt>
                     <dd className="mt-1 text-sm text-white">{project.year}</dd>
                   </div>
+                  {project.client && (
+                    <div>
+                      <dt className="text-xs text-zinc-500">委製 / 合作單位</dt>
+                      <dd className="mt-1 text-sm text-white">{project.client}</dd>
+                    </div>
+                  )}
+                  {project.role && (
+                    <div>
+                      <dt className="text-xs text-zinc-500">擔任角色</dt>
+                      <dd className="mt-1 text-sm text-white">{project.role}</dd>
+                    </div>
+                  )}
+                  {project.venue && (
+                    <div>
+                      <dt className="text-xs text-zinc-500">展演地點</dt>
+                      <dd className="mt-1 text-sm text-white">{project.venue}</dd>
+                    </div>
+                  )}
+                  {project.duration && (
+                    <div>
+                      <dt className="text-xs text-zinc-500">體驗時長</dt>
+                      <dd className="mt-1 text-sm text-white">{project.duration}</dd>
+                    </div>
+                  )}
+                  {project.budget && (
+                    <div>
+                      <dt className="text-xs text-zinc-500">製作規模</dt>
+                      <dd className="mt-1 text-sm text-white">{project.budget}</dd>
+                    </div>
+                  )}
                   <div>
                     <dt className="text-xs text-zinc-500">標籤</dt>
                     <dd className="mt-1 flex flex-wrap gap-2">
