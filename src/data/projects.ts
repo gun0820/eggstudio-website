@@ -238,7 +238,7 @@ export const projects: Project[] = [
     title: '科學幻想',
     titleEn: 'Science Fiction',
     category: '內容開發',
-    year: 2022,
+    year: 2021,
     description: '融合科學與幻想的創意內容，帶領觀眾穿越科幻場景，感受未來世界的想像。',
     thumbnail: 'https://static.wixstatic.com/media/5526fe_55f0ddc1443649818b4475281a542ee3~mv2.png/v1/fill/w_1005,h_520,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/1Copie%20de%20GuardiansStill017.png',
     tags: ['內容開發', '科幻'],
